@@ -1,0 +1,30 @@
+GET http://localhost:5000/subscribers
+
+###
+
+DELETE http://localhost:5000/subscribers/626cd8fc2d787c601e1a4dc8
+###
+GET http://localhost:5000/subscribers/626cd8e02d787c601e1a4db2
+
+
+###
+
+POST http://localhost:5000/createSubscriber
+Content-Type: application/json
+
+{
+    "name" : "Nikita",
+    "subscribedToChannel":"Computer"
+}
+
+###
+
+
+
+###
+PATCH http://localhost:5000/subscribers/626cd8e02d787c601e1a4db2
+Content-Type: application/json
+
+{
+    "name" : "Priya"
+}
